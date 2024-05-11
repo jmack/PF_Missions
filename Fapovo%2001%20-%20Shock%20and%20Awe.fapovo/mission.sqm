@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=760;
+		nextID=798;
 	};
 	class Camera
 	{
-		pos[]={981.70447,53.306023,3895.0991};
-		dir[]={0.35497734,-0.37465584,0.8565799};
-		up[]={0.14344352,0.92714542,0.34613413};
-		aside[]={0.92385894,1.4870966e-006,-0.38286045};
+		pos[]={4514.1128,599.59399,-2788.5332};
+		dir[]={0.63052398,-0.27291769,-0.72668201};
+		up[]={0.17889129,0.96201706,-0.20617408};
+		aside[]={-0.75535583,-8.0038444e-007,-0.65540117};
 	};
 };
 binarizationWanted=0;
@@ -62301,7 +62301,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={578.51294,1.5152997,4256.6641};
+								position[]={578.51294,1.5152994,4256.6641};
 								angles[]={0,2.9845324,0};
 							};
 							side="Empty";
@@ -62310,7 +62310,7 @@ class Mission
 							};
 							id=9086;
 							type="optre_catfish_ins_mg_f";
-							atlOffset=1.6131464;
+							atlOffset=1.6131462;
 						};
 						class Item6
 						{
@@ -129070,7 +129070,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4464.936,603.10889,-2898.3826};
+												position[]={4464.936,603.10889,-2898.3899};
 												angles[]={0.39216954,0.51173806,6.0487638};
 											};
 											side="Empty";
@@ -145086,8 +145086,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4516.877,597.88232,-2786.1855};
-												angles[]={0,0.5585081,0};
+												position[]={4517.6948,597.88202,-2786.3679};
+												angles[]={-0,0.5585081,0};
 											};
 											side="Empty";
 											flags=4;
@@ -145099,7 +145099,6 @@ class Mission
 											};
 											id=9780;
 											type="Land_OPTRE_field_bunk_open";
-											atlOffset=0.00030517578;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -145953,8 +145952,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4513.9326,597.88232,-2791};
-												angles[]={0,3.7001195,0};
+												position[]={4514.6963,597.6969,-2791.2976};
+												angles[]={-0,3.7001195,0};
 											};
 											side="Empty";
 											flags=4;
@@ -145966,7 +145965,6 @@ class Mission
 											};
 											id=9804;
 											type="Land_OPTRE_field_bunk_open";
-											atlOffset=0.1854248;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -147937,7 +147935,7 @@ class Mission
 											};
 											id=9859;
 											type="Land_JMS_light_UpLight_1";
-											atlOffset=2.053833;
+											atlOffset=3.3671265;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -156164,12 +156162,12 @@ class Mission
 									dataType="Logic";
 									class PositionInfo
 									{
-										position[]={4464.7803,601.81689,-2900.2813};
-										angles[]={0,3.7001152,0};
+										position[]={4464.7798,601.81702,-2900.281};
+										angles[]={0,3.700098,0};
 									};
 									id=10010;
 									type="ace_slideshow_module";
-									atlOffset=6.6051636;
+									atlOffset=6.6052856;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -156207,7 +156205,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Default Screen";
+													value="Default Screen,Fapovo,Task Force Spartacus,Wide Tactical,Wizard Tactical";
 												};
 											};
 										};
@@ -156246,7 +156244,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="PF_Images\briefings\default_screen.paa";
+													value="PF_Images\briefings\default_screen.paa,PF_Images\briefings\fapovo\1\1.paa,PF_Images\briefings\fapovo\1\2.paa,PF_Images\briefings\fapovo\1\3.paa,PF_Images\briefings\fapovo\1\4.paa";
 												};
 											};
 										};
@@ -156268,11 +156266,11 @@ class Mission
 								};
 							};
 							id=10008;
-							atlOffset=11.376526;
+							atlOffset=11.376587;
 						};
 					};
 					id=9180;
-					atlOffset=467.4783;
+					atlOffset=467.47833;
 				};
 				class Item1
 				{
@@ -156433,7 +156431,7 @@ class Mission
 				};
 			};
 			id=10011;
-			atlOffset=633.04053;
+			atlOffset=633.04059;
 		};
 		class Item8
 		{
