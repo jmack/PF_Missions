@@ -400,24 +400,75 @@ _noOffRoad = false; //Civilian vehicles driving at speed more than 50 meters fro
 
 
 //-------------------------Enemy Disguise settings-------------------------
-_incogFactions = ["O_USGuard_OD","O_USArmy_DES"]; //Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
+//Array of enemy factions whose items and vehicles will allow the player to impersonate the enemy
+_incogFactions = [
+  "O_USGuard_OD",
+  "O_USArmy_DES"
+];
 
  //Names of additional markers for areas that would be considered trespassing (any with "INC_tre" - case sensitive - somewhere in the marker name will automatically be included)
 _trespassMarkers = [];
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoVests = [];
+_incognitoVests = [
+  // Guard
+  "cwr3_b_vest_beltkit_officer",
+  "cwr3_b_vest_alice_ar",
+  "cwr3_b_vest_alice_crew",
+  "cwr3_b_vest_alice_etool",
+  "cwr3_b_vest_alice_gl",
+  "cwr3_b_vest_alice_light",
+  "cwr3_b_vest_alice_mg",
+  "cwr3_b_vest_alice_medic",
+  "cwr3_b_vest_alice_officer",
+  "cwr3_b_vest_alice",
+  // Fairview Sheriff
+  "V_TacVest_blk_POLICE"
+];
 
 //(Array of classnames) Safe headgear (will automatically include incog headgear classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoHeadgear = [];
+_incognitoHeadgear = [
+  // Guard
+  "cwr3_b_headgear_m1_cover_net",
+  "CUP_H_PMC_Beanie_Khaki",
+  "H_Beret_02",
+  "cwr3_b_headgear_cap_m81_woodland_early",
+  // Fairview Sheriff
+  "c_sheriffOD_1",
+  "CUP_H_Ger_M92_Black_GG",
+  "CUP_H_Ger_M92_Black_GG_CF"
+];
 
 //(Array of classnames) Safe backpacks (will automatically include incog backpack classes - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoBackpacks = [];
+_incognitoBackpacks = [
+  // Guard
+  "B_LegStrapBag_olive_F",
+  "usm_pack_762x51_bandoliers"
+];
 
 //(Array of classnames) Safe uniforms (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
-_incognitoUniforms = [];
+_incognitoUniforms = [
+  // Guard
+  "cwr3_b_uniform_og107",
+  "cwr3_b_uniform_og107_rolled",
+  // Fairview Sheriff
+  "U_pa_sheriffUniform_1"
+];
 
-_incogVehArray = []; //(Array of classnames) Additional incognito vehicles (vehicles from the faction above will automatically count, as will all _highSecVehicles)
+ //(Array of classnames) Additional incognito vehicles (vehicles from the faction above will automatically count, as will all _highSecVehicles)
+_incogVehArray = [
+  // Guard
+  "O_OUSGuardOD_M38A2_Covered_01",
+  "O_OUSGuardOD_M38A2_Ammo_01",
+  "O_OUSGuardOD_M38A2_Fuel_01",
+  "O_OUSGuardOD_M38A2_Open_01",
+  "O_OUSGuardOD_M223_Unarmed_01",
+  "O_OUSGuardOD_M223_Armed_01",
+  // Fairview Sheriff
+  "ivory_cv_marked",
+  "pas_ivory_charger_marked_sheriff_generic",
+  "sheriff_m113"
+];
 
 
 
@@ -433,9 +484,28 @@ _highSecMarkers = []; 					//Names of additional markers for areas that are desi
 
 _highSecInstantHostile = false;         // If true, units entering high security areas with the wrong uniform will be instantly deemed hostile by enemy forces. If false, it will be highly suspicious.
 
-_highSecVehicles = [];                  // (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
+// (Array of classnames) Vehicles that can enter high security areas without raising suspicion (uniforms will still be noticed according to how open the vehicle is)
+_highSecVehicles = [
+  "O_OUSArmyDES_M38A2_Covered_01",
+  "O_OUSArmyDES_M38A2_Ammo_01",
+  "O_OUSArmyDES_M38A2_Fuel_01",
+  "O_OUSArmyDES_M38A2_Open_01",
+  "O_OUSArmyDES_M223_Unarmed_01",
+  "O_OUSArmyDES_M223_Armed_01",
+  "O_OUSArmyDES_M113A1_01",
+  "O_OUSArmyDES_M113A1_MEV_01",
+  "O_OUSArmyDES_M13A2_01",
+  "O_OUSArmyDES_F159B_01",
+  "O_OUSArmyDES_F4E_01",
+  "O_OUSArmyDES_F8B_01",
+  "O_OUSArmyDES_F330_Puma_01",
+  "O_OUSArmyDES_F7_Lynx_01"
+];
 
-_highSecurityUniforms = [];             // (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
+// (Array of classnames) Uniforms that allow entry into high security areas (defined by high security markers)
+_highSecurityUniforms = [
+
+];
 
 _highSecItemCheck = true;               // Check for disallowed items that aren't in the permitted list? Each non-permitted item will incur a suspicion penality. Set to false if high security checks just include uniform only.
 
