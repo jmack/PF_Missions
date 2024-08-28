@@ -36,7 +36,6 @@ _civFactions = ["CIV_F"]; //Array of factions whose vests are safe for undercove
 
 //(Array of classnames) Safe vests (on top of the specific factions above - useful if faction has randomisation script or to add items that are not used by the faction)
 _civilianVests = [
-  "rhs_6sh92",
   "V_DeckCrew_yellow_F",
   "V_LegStrapBag_black_F",
   "V_LegStrapBag_coyote_F",
